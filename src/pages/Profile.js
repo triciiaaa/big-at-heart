@@ -49,7 +49,7 @@ const ProfilePage = () => {
     <>
       <Navbar />
       <Box padding="64px" bgcolor="#FEE9E0">
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" fontWeight="bold" gutterBottom>
           Profile
         </Typography>
         <Stack direction="row" justifyContent="space-between">

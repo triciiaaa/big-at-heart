@@ -8,8 +8,8 @@ const Blog = () => {
   return (
     <>
       <Navbar />
-      <Box padding="64px">
-        <Typography variant="h4" gutterBottom>
+      <Box padding="64px" bgcolor="#FEE9E0">
+        <Typography variant="h4" fontWeight="bold" gutterBottom>
           Blog
         </Typography>
       </Box>

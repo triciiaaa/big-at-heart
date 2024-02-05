@@ -1,19 +1,30 @@
-import React from 'react';
+import React from "react";
 
-import ProgressBar from './ProgressBar'
+import ProgressBar from "./ProgressBar";
 
-import { ListItem, ListItemText, ListItemIcon } from '@mui/material';
-import StarIcon from '@mui/icons-material/Star';
+import {
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  CardContent,
+  Card,
+} from "@mui/material";
 
-const AchievementItem = ({ title, description, icon }) => {
+const AchievementItem = ({ title, description, icon, progress }) => {
+  const cardStyle = {
+    borderRadius: 3, // Adjust the border-radius as needed
+  };
+
   return (
-    <ListItem>
-      <ListItemIcon>
-        {icon ? icon : <StarIcon />} {/* You can customize the icon or use a default one */}
-      </ListItemIcon>
-      <ListItemText primary={title} secondary={description} />
-      <ProgressBar value={50} />
-    </ListItem>
+    <Card sx={cardStyle}>
+      <CardContent>
+        <ListItem>
+          <ListItemIcon>{icon}</ListItemIcon>
+          <ListItemText primary={title} secondary={description} />
+          <ProgressBar value={progress} />
+        </ListItem>
+      </CardContent>
+    </Card>
   );
 };
 
