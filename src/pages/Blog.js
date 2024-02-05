@@ -126,13 +126,22 @@ const Blog = () => {
               value={newBlogContent}
               onChange={(e) => setNewBlogContent(e.target.value)}
             />
-            <Button
-              variant="contained"
-              sx={{ bgcolor: "#CD3301", "&:hover": { bgcolor: "#992200" } }}
-              onClick={handleCreateBlog}
-            >
-              Create Blog
-            </Button>
+            <Stack direction="row" gap="16px" justifyContent="right">
+              <Button
+                variant="contained"
+                sx={{ bgcolor: "#CD3301", "&:hover": { bgcolor: "#992200" } }}
+                onClick={handleCreateBlog}
+              >
+                SAVE DRAFT
+              </Button>
+              <Button
+                variant="contained"
+                sx={{ bgcolor: "#CD3301", "&:hover": { bgcolor: "#992200" } }}
+                onClick={handleCreateBlog}
+              >
+                POST
+              </Button>
+            </Stack>
           </CardContent>
         </Card>
       </Box>
