@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/VolunteerNavbar";
 import blog1 from "../graphics/blog-1.jpg";
 import blog2 from "../graphics/blog-2.jpg";
 import blog3 from "../graphics/blog-3.jpg";

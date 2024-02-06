@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/VolunteerNavbar";
 import AchievementItem from "../components/AchievementItem";
 import superhero from "../graphics/superhero.svg";
 import child from "../graphics/child.svg";

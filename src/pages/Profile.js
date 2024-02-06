@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/VolunteerNavbar";
 import profile_image from "../graphics/profile_image.png";
 import footsteps from "../graphics/footsteps.svg";
 import workshop1 from "../graphics/workshop-1.png";
