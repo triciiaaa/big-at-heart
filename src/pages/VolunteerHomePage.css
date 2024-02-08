@@ -264,6 +264,11 @@ body {
     border-radius: 5px;
   }
 
+  .add-post-button a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+  }
+
   .post-container {
     margin-bottom: 20px;
     padding: 10px;

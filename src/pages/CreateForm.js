@@ -125,13 +125,7 @@ const CreateForm = () => {
 
 			<div class="box-container"> 
 
-				<div class="box box1"> 
-					<div class="text"> 
-						<h2 class="topic-heading">Volunteer Application Form</h2> 
-							
-					</div>
-					
-				</div>
+			<h2 class="topic-heading">Volunteer Application Form</h2>
 			</div>
 
 			<div id = "formContainer">
@@ -155,9 +149,7 @@ const CreateForm = () => {
 					
 
 				</form>
-
-				<button id = "publishbutton" type = "button"> Create</button> <br/>
-				
+				<button id = "savebutton" type = "button">Create</button> 
 				<script>
 					
 					

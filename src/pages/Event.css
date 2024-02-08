@@ -74,7 +74,13 @@ body {
     padding: 15px;
     border: 1px solid #ddd;
     text-align: center;
+    background-color: white; /* White background color */
   }
+
+  .event-box img {
+    max-width: 100%; /* Scale image proportionately to fit the container width */
+    height: auto; /* Ensure the image height adjusts accordingly */
+}
 
   .event-image {
     max-width: 100%;
@@ -99,7 +105,7 @@ body {
   .learn-more-btn {
     background-color: #333;
     color: #fff;
-    padding: 10px 15px;
+    padding: 5px 15px;
     text-decoration: none;
     border-radius: 5px;
   }

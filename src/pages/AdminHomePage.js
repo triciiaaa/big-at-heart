@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Stack } from '@mui/material';
+
 import "./AdminHomePage.css";
 import AdminNavbar from '../components/AdminNavbar';
 import impact_graph from "../graphics/impact-graph.png";
@@ -130,67 +132,69 @@ const AdminHomePage = () => {
 				</div> 
 			</div> 
 
-			<div class="box-container"> 
+			{/* <div class="box-container">  */}
+			<Stack direction="row" gap="150px">
 
 				<div class="box box1"> 
 					<div class="text"> 
-						<h2 class="topic-heading">500</h2> 
-						<h2 class="topic">Total Volunteers</h2> 
+						<h2 class="metric-number">500</h2> 
+						<h3 class="metric-description">Total Volunteers</h3> 
 					</div> 
 
 					<img src= 
 "https://cdn-icons-png.flaticon.com/512/4994/4994354.png"
-						alt="Volunteer"/> 
+alt="Volunteer"/> 
 				</div> 
 
 				<div class="box box2"> 
 					<div class="text"> 
-						<h2 class="topic-heading">7920</h2> 
-						<h2 class="topic">Impact</h2> 
+						<h2 class="metric-number">7920</h2> 
+						<h3 class="metric-description">Impact</h3> 
 					</div> 
 
 					<img src= 
 "https://cdn-icons-png.flaticon.com/512/8987/8987759.png"
-						alt="impact"/> 
+alt="impact"/> 
 				</div> 
 
 				<div class="box box3"> 
 					<div class="text"> 
-						<h2 class="topic-heading">7821</h2> 
-						<h2 class="topic">Website Views</h2> 
+						<h2 class="metric-number">7821</h2> 
+						<h3 class="metric-description">Website Views</h3> 
 					</div> 
 
 					<img src= 
 "https://cdn-icons-png.flaticon.com/512/1336/1336915.png"
-						alt="website"/> 
+alt="website"/> 
 				</div> 
 
 				<div class="box box4"> 
 					<div class="text"> 
-						<h2 class="topic-heading">$50,231</h2> 
-						<h2 class="topic">Donations</h2> 
+						<h2 class="metric-number">$50,231</h2> 
+						<h3 class="metric-description">Donations</h3> 
 					</div> 
 
 					<img src= 
 "https://cdn-icons-png.flaticon.com/512/2913/2913091.png" 
-						alt="donations"/> 
+alt="donations"/> 
 				</div> 
-			</div> 
+			{/* </div>  */}
+</Stack>
 
 			<div class="graph-container"> 
 				<div class="graph-header"> 
 					<h1 class="graph">Volunteer Attendance</h1> 
-					<a href="Volunteer-Attendance.xlsx"><button class="graph-view">View Details</button></a>
+					<a href="Volunteer-Attendance.xlsx"><button class="view-details-button">View Details</button></a>
 				</div> 
 				<img src= 
 "https://assets.nationbuilder.com/ncwnz/pages/1172/attachments/original/1671078640/JustifiedVsUnjustifiedAbsences2019-2022.jpg?1671078640" 
-						alt="attendance" width="500"/>
+alt="attendance" width="500"/>
 			</div>
 
 			<div class="graph-container"> 
 				<div class="graph-header"> 
 					<h1 class="graph">Organisations Impacts</h1> 
-					<a href="Impacted-Organizations.docx"><button class="graph-view">View Details</button></a> 
+					<a href="Impacted-Organisations.docx"><button class="view-details-button">View Details</button></a>
 				</div>
 				<img src={impact_graph}
 						alt="impacts" height="250"/>
@@ -199,7 +203,7 @@ const AdminHomePage = () => {
 			<div class="report-container"> 
 				<div class="report-header"> 
 					<h1 class="recent-Articles">Recent Projects</h1> 
-					<button class="view">View All</button> 
+					<button class="view-all-button">View All</button>
 				</div> 
 
 				<div class="report-body"> 

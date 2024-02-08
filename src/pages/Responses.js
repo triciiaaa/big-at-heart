@@ -123,16 +123,11 @@ const Responses = () => {
 
 			{/* <!-- Projects--> */}
 			<div class="box-container"> 
+				<h2 class="topic-heading">BeKind Responses</h2>
 
-				<div class="box box1"> 
-					<div class="text"> 
-						<h2 class="topic-heading">BeKind Responses</h2>	
-					</div>	
-				</div>	
+			{/* <div class="box-container">  */}
 
-			<div class="box-container"> 
-
-			<table/>
+			<table>
 				<thead>
 					<tr>
 						<th>Name</th>
@@ -150,7 +145,7 @@ const Responses = () => {
 						<td>28 Chua Chu Kang #12-06</td>
 						<td>128363</td>
 						<td>every Saturday</td>
-						<td><button onclick="performAction()">Schedule Interview</button></td>
+						<td><button class="schedule-interview-button" onclick="performAction()"><b>Schedule Interview</b></button></td>
 					</tr>
 					<tr>
 						<td>Tan Ling</td>
@@ -158,7 +153,7 @@ const Responses = () => {
 						<td>18 Serangoon #17-06</td>
 						<td>173951</td>
 						<td>every Saturday</td>
-						<td><button onclick="performAction()">Schedule Interview</button></td>
+						<td><button class="schedule-interview-button" onclick="performAction()"><b>Schedule Interview</b></button></td>
 					</tr>
 					<tr>
 						<td>Tricia AD</td>
@@ -166,7 +161,7 @@ const Responses = () => {
 						<td>16 Dover Avenue #5-12</td>
 						<td>130272</td>
 						<td>every Saturday</td>
-						<td><button onclick="performAction()">Schedule Interview</button></td>
+						<td><button class="schedule-interview-button" onclick="performAction()"><b>Schedule Interview</b></button></td>
 					</tr>
 					
 					<tr>
@@ -194,7 +189,8 @@ const Responses = () => {
 						<td></td>
 					</tr>
 				</tbody>
-			</div>
+			</table>
+			{/* </div> */}
 		</div> 
 	</div> 
     </div>

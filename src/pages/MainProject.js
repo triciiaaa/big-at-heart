@@ -123,27 +123,17 @@ export const MainProject = () => {
 
 			{/* <!-- Projects--> */}
 			<div class="box-container"> 
-
-				<div class="box box1"> 
-					<div class="text"> 
-						<h2 class="topic-heading">Projects</h2> 
-							
-					</div>
-					
-				</div>
+				<h2 class="topic-heading">Projects</h2>
 
 				<div class = "box-container">
 					<div class = "box2">
-						<h5 class="topic-heading">Domestic Helpers Flea Market</h5> <br/>
+						<h5 class="project-title">Domestic Helpers Flea Market</h5> <br/>
 						<p>16th of June is the International Domestic Workers' Day. Our Migrant Domestic Workers (MDWs) a.k.a helpers are an integral and crucial part of many families in Singapore and help run our lives smoothly. 
 							Last 2 years were as tough on them as us. They could not travel back home or even take weekends off.		
 							To celebrate their contributions and to give them a day of fun, ADEO (Alliance of Domestic Employees Outreach) and 
 							Big At Heart have come together and arranged a Domestic Helpers Flea Market on 19th June (details will be posted here next week).</p>
-
-							<div class = "edit-button">
-								<button>Edit</button>
-				
-							</div>
+							
+							<button class="edit-button"><b><u>Edit</u></b></button>
 
 					</div>
 				</div>

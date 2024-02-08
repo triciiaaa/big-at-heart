@@ -256,3 +256,9 @@ th {
     background-color: #c96b6b;
 }
 
+.schedule-interview-button {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 5px 10px; /* Adjust padding as needed */
+}

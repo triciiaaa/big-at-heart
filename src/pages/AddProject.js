@@ -6,6 +6,20 @@ import AdminNavbar from '../components/AdminNavbar';
 const AddProject = () => {
   return (
     <>
+		{/* <head> 
+			<meta charset="UTF-8"/> 
+			<meta http-equiv="X-UA-Compatible"
+				content="IE=edge"/> 
+			<meta name="viewport"
+				content="width=device-width, 
+						initial-scale=1.0"/> 
+			<title>BigAtHeartAdmin</title> 
+			<link rel="stylesheet"
+				href="Admin_AddProjectPage_Style.css"/> 
+			<link rel="stylesheet"
+				href="responsive.css"/> 
+		</head>  */}
+
         <body> 
 	
 	{/* <!-- for header part --> */}
@@ -44,7 +58,7 @@ const AddProject = () => {
 
 	<div class="main-container"> 
 		<div class="navcontainer"> 
-			<AdminNavbar/>
+			<AdminNavbar />
 			{/* <nav class="nav"> 
 				<div class="nav-upper-options"> 
 					<div class="option2 nav-option"> 
@@ -123,13 +137,10 @@ const AddProject = () => {
 			</div> 
 
 			{/* <!-- Projects--> */}
+			<h2 class="topic-heading">New Project</h2>
 
-			<div class="box box1"> 
-				<div class="text"> 
-					<h2 class="topic-heading">New Project</h2> 
-				</div>
-				
-			</div>
+			<br/>
+			<br/>
 
 			<div id = "firstContainer">
                 <form id = "userform" >
@@ -140,10 +151,12 @@ const AddProject = () => {
 					<label for = "desc">Description: </label> <br/>
 					<textarea type = "desc" id = "text-long" required="no" placeholder="Description"> </textarea><br/> 
 
-				   <button id = "createFbutton" type = "button"> <b><u>Create Form</u></b></button> <br/>
+					<button class="create-form-button"><b><u>Create Form</u></b></button>
 
-				   <button id = "savebutton" type = "button"> Save</button> <br/>
-				   <button id = "publishbutton" type = "button"> Publish</button> <br/>
+					<div class="save-and-publish">
+						<button id = "savebutton" type = "button"> Save</button> 
+						<button id = "savebutton" type = "button"> Publish</button> 
+					</div>
 
 
 

@@ -151,6 +151,7 @@ align-items: center;
 flex-wrap: wrap; 
 gap: 50px; 
 } 
+
 .nav { 
 min-height: 91vh; 
 width: 250px; 
@@ -248,7 +249,8 @@ height: 50px;
 } 
 .box .text { 
 color: white; 
-} 
+}  
+
 .topic { 
 font-size: 13px; 
 font-weight: 400; 
@@ -258,7 +260,18 @@ letter-spacing: 1px;
 .topic-heading { 
 font-size: 30px; 
 letter-spacing: 3px; 
+color: #ffffff;
 } 
+
+.metric-number {
+	font-size: 40px; 
+	color: #ffffff;
+}
+
+.metric-description {
+	font-size: 15px; 
+	color: #ffffff;
+}
 
 .graph-container { 
 min-height: 300px; 
@@ -297,6 +310,29 @@ border: none;
 cursor: pointer;
 float: left;
 } 
+
+.view-details-button {
+	background-color: #cb0000; 
+	color: white; /* Text color */
+	border: none;
+	border-radius: 5px; /* Rounded edges */
+	padding: 10px 20px; /* Padding to make the button larger */
+	cursor: pointer; /* Show pointer cursor on hover */
+	font-size: 12px; /* Font size */
+	white-space: nowrap; /* Ensure text stays horizontal */
+}
+
+.view-all-button {
+	max-width: fit-content;
+	background-color: #cb0000; 
+	color: white; /* Text color */
+	border: none;
+	border-radius: 5px; /* Rounded edges */
+	padding: 8px 12px; /* Adjust padding as needed */
+	cursor: pointer; /* Show pointer cursor on hover */
+	font-size: 12px; /* Font size */
+	white-space: nowrap; /* Ensure text stays horizontal */
+}
 
 .report-container { 
 min-height: 300px; 

@@ -33,54 +33,60 @@ const Events = () => {
           alt="Event"
           class="event-image"
         />
-        <div class="event-details">
+        <div>
           <h3>Labour Day Charity Walk</h3>
           <p>Date: January 10, 2024</p>
+          <br/>
           <a href="#" class="learn-more-btn">Learn More</a>
         </div>
       </div>
 
       <div class="event-box">
         <img src={all_about_women} alt="Event" class="event-image" />
-        <div class="event-details">
+        <div>
           <h3>All About Women Talk</h3>
           <p>Date: February 15, 2024</p>
+          <br/>
           <a href="#" class="learn-more-btn">Learn More</a>
         </div>
       </div>
 
       <div class="event-box">
         <img src={book_santa} alt="Event" class="event-image" />
-        <div class="event-details">
+        <div>
           <h3>Be a Book Santa</h3>
           <p>Date: January 3, 2024</p>
+          <br/>
           <a href="#" class="learn-more-btn">Learn More</a>
         </div>
       </div>
 
       <div class="event-box">
         <img src={pongol_celebration} alt="Event" class="event-image" />
-        <div class="event-details">
+        <div>
           <h3>Pongol Celebration with Migrant Brothers</h3>
           <p>Date: February 10, 2024</p>
+          <br/>
           <a href="#" class="learn-more-btn">Learn More</a>
         </div>
       </div>
 
       <div class="event-box">
         <img src={sponsor_a_birthday} alt="Event" class="event-image" />
-        <div class="event-details">
+        <div>
           <h3>Sponsor a Birthday</h3>
           <p>Date: March 16, 2024</p>
+          <br/>
           <a href="#" class="learn-more-btn">Learn More</a>
         </div>
       </div>
 
       <div class="event-box">
         <img src={charity_walk} alt="Event" class="event-image" />
-        <div class="event-details">
+        <div>
           <h3>Labour Day Charity Drive 2022</h3>
           <p>Date: March 20, 2024</p>
+          <br/>
           <a href="#" class="learn-more-btn">Learn More</a>
         </div>
       </div>

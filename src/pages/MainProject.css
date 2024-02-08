@@ -236,9 +236,21 @@ letter-spacing: 1px;
 } 
 
 .topic-heading { 
-font-size: 45px; 
-letter-spacing: 1px; 
+	font-size: 45px; 
+	letter-spacing: 1px; 
+	color: #ac4949; 
 } 
+
+.project-title { 
+	font-size: 45px; 
+	letter-spacing: 1px; 
+} 
+
+.edit-button {
+    background-color: transparent;
+    color: black;
+    text-align: left;
+}
 
 .add-button {
 	display:inline-block;

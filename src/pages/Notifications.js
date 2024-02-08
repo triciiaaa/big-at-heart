@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import "./Notifications.css";
 import AdminNavbar from '../components/AdminNavbar'
@@ -130,8 +130,8 @@ const Notifications = () => {
 					 
 					
 					  
-				  </div>
 				  <script src="Notifscript.js"></script> 
+				  </div>
 
 			
 

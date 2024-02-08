@@ -238,7 +238,14 @@ letter-spacing: 1px;
 .topic-heading { 
 font-size: 45px; 
 letter-spacing: 1px; 
+color: #ac4949; 
 } 
+
+.create-form-button {
+    background-color: transparent;
+    color: black;
+    text-align: left;
+}
 
 input[type="title"] {
     width: 90%; 
@@ -281,6 +288,11 @@ input[type="desc"] {
 	border: none;
     color: white;  
     cursor: pointer; 
+}
+
+.save-and-publish {
+    display: flex;
+    gap: 5px;
 }
 
 .custom1{
