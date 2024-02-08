@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Homepage</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #b81111;
+      height: 60px;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding-left: 120px;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 30px;
+    }
+
+    nav li {
+      margin: 0 150px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-image {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 5%;
+      padding-left: 50px;
+    }
+
+    .profile-button {
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 13px;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .dashboard-container {
+      display: flex;
+      height: calc(100vh - 192px);
+      padding: 20px;
+    }
+
+    .events-section {
+      width: 20%;
+      margin: 0 12px;
+      padding: 20px;
+      background-color: #f6dddd;
+      overflow-y: auto;
+    }
+
+    .event-box {
+      margin-bottom: 20px;
+      border: 1px solid #ffffff;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative;
+      background-color: #fff;
+    }
+
+    .event-box:hover {
+      background-color: #e0e0e0;
+    }
+
+    .event-details {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .more-details-button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: #b81111;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .center-section {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .contribution-section {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    .contribution-header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hours-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 60px;
+    }
+
+    .hours-volunteered {
+      font-size: 110px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .hours-text {
+      font-size: 20px;
+      color: #666;
+      text-align: center;
+    }
+
+    .event-breakdown {
+      height: 80%;
+      padding-right: 10px;
+    }
+
+    .achievements-header {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .achievement-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      background-color: #f6dddd;
+      padding: 15px;
+      position: relative;
+    }
+
+    .achievement-details {
+      text-align: left;
+    }
+
+    .achievement-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .short-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .achieved-box {
+      width: 80px;
+      height: 30px;
+      background-color: #b81111;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+
+    .view-more {
+      text-align: center;
+      font-size: 16px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .feed-section {
+      width: 20%;
+      background-color: #f6dddd;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .feed-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .add-post-button {
+      background-color: #b81111;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .post-container {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #fff;
+      position: relative;
+    }
+
+    .post-image {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .post-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .like-button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: #b81111;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .like-icon {
+      margin-right: 5px;
+    }
+
+    footer {
+      background-color: #b81111;
+      color: #fff;
+      text-align: right;
+      padding: 10px;
+      padding-right: 20px;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <img src="Big At Heart Logo.png" alt="Nav Image" class="nav-image" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="profile-button">P</div>
+    </nav>
+
+    <div class="dashboard-container">
+      <div class="events-section">
+        <h2>Upcoming Events</h2>
+
+        <div class="event-box">
+          <h3>Labour Day Charity Walk</h3>
+          <p>Date: January 10, 2024</p>
+          <button class="more-details-button">More Details</button>
+        </div>
+
+        <h2>You may be interested in</h2>
+        <div class="event-box">
+          <h3>All About Women Talk</h3>
+          <p>Date: February 15, 2024</p>
+          <button class="more-details-button">More Details</button>
+        </div>
+
+        <div class="event-box">
+          <h3>Pongol Celebration with Migrant Brothers</h3>
+          <p>Date: February 10, 2024</p>
+          <button class="more-details-button">More Details</button>
+        </div>
+      </div>
+
+      <div class="center-section">
+        <div class="contribution-header">Your Contribution</div>
+
+        <div class="contribution-section">
+          <div class="hours-section">
+            <div class="hours-volunteered">1282</div>
+            <div class="hours-text">hours volunteered</div>
+          </div>
+          <img
+            src="Volunteer Breakdown.png"
+            alt="Volunteer Breakdown"
+            class="event-breakdown"
+          />
+        </div>
+
+        <div class="achievements-header">Achievements</div>
+
+        <div class="achievement-box">
+          <div class="achievement-details">
+            <div class="achievement-name">First Volunteer Event</div>
+            <div class="short-description">
+              Thank you for volunteering your time with us! Hope to see you more
+              often :)
+            </div>
+            <div class="achieved-box">Achieved</div>
+          </div>
+        </div>
+
+        <div class="achievement-box">
+          <div class="achievement-details">
+            <div class="achievement-name">A Giving Heart</div>
+            <div class="short-description">
+              Achieve 50 volunteer hours with Big At Heart
+            </div>
+            <div class="achieved-box">Achieved</div>
+          </div>
+        </div>
+
+        <div class="achievement-box">
+          <div class="achievement-details">
+            <div class="achievement-name">Migrant Workers Advocate</div>
+            <div class="short-description">
+              Volunteer at 10 migrant-related events
+            </div>
+            <div class="achieved-box">Achieved</div>
+          </div>
+        </div>
+
+        <div class="view-more">View More</div>
+      </div>
+
+      <div class="feed-section">
+        <div class="feed-header">
+          <h2>Our Impact</h2>
+          <button class="add-post-button">+</button>
+        </div>
+
+        <div class="post-container">
+          <img src="Migrant Blog Two.png" alt="Post" class="post-image" />
+          <div class="post-title">
+            Dressing Dreams : Volunteering To Provide Affordable Clothings To
+            Migrant Domestic Workers
+          </div>
+          <div class="like-button">
+            <span class="like-icon">&#10084;</span> 20
+          </div>
+        </div>
+        <div class="post-container">
+          <img src="Migrant Blog.png" alt="Post" class="post-image" />
+          <div class="post-title">
+            International Migrant's Day Celebration - My experience
+          </div>
+          <div class="like-button">
+            <span class="like-icon">&#10084;</span> 37
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Contact Us: team@bigatheart.org | +65 8776 5740</p>
+    </footer>
+  </body>
+</html>
