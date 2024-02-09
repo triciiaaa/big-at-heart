@@ -56,6 +56,8 @@ Run the following command in the root directory of the project:
 npm start
 ```
 
+Note: The application currently supports __desktop mode__ only. 
+
 ## Installation
 Run the following command to install additional packages and dependencies if necessary:
 ```
